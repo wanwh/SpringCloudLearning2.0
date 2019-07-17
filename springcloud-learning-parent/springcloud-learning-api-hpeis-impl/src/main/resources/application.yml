@@ -5,14 +5,24 @@ server:
 spring:
   application:
     name: app-wanwh-hpeis
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        service-id: config-service
+        enable: true
 ###服务注册到eureka地址
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8100/eureka
-
-
     ###因为该应用为注册中心，不会注册自己
     register-with-eureka: true
     ###是否需要从eureka上获取注册信息
     fetch-registry: true
+###开启所有监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
