@@ -17,3 +17,8 @@ eureka:
     register-with-eureka: false
     ###因为自己是为注册中心，不需要检索服务
     fetch-registry: false
+  server:
+    # 关闭自我保护机制
+    enable-self-preservation: true
+    # 每隔10s扫描服务列表，移除失效服务
+    eviction-interval-timer-in-ms: 10000

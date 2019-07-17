@@ -12,8 +12,9 @@ spring:
           uri: https://gitee.com/wanweihua_1/springcloud2.0-config.git
           search-paths:
             - config
-          username: 18046766696
-          password: qq125741252
+###共有仓库无需输入密码
+#          username:
+#          password:
       label: master
 server:
   port: 8888
