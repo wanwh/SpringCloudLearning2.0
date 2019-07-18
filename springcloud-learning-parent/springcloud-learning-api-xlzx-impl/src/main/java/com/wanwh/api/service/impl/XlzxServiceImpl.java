@@ -24,6 +24,7 @@ public class XlzxServiceImpl implements IXlzxService {
     @Resource
     private HpeisServiceFeign hpeisServiceFeign;
 
+    @Override
     @RequestMapping("/xlzxToHpeis")
     public String xlzxToHpeis(@RequestParam("name") String name) {
         return service_port + "_获取到信息："+ hpeisServiceFeign.getMember(name).toString();

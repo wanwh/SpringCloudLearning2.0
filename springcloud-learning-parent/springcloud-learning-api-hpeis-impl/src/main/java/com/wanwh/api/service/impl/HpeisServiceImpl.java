@@ -21,8 +21,10 @@ public class HpeisServiceImpl implements IHpeisService {
     @Value("${server.port}")
     private String service_port;
     //http://127.0.0.1:8882/actuator/refresh  手动刷新配置文件地址
+    @Override
     @RequestMapping("/getMember")
     public GlobalResult getMember(@RequestParam("name") String name) {
+        int i = 1/0;
         User user = new User();
         user.setName(service_port);
         user.setAge(20);

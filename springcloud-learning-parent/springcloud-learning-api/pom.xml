@@ -17,6 +17,7 @@
     <modules>
         <module>springcloud-learning-api-xlzx</module>
         <module>springcloud-learning-api-hpeis</module>
+        <module>springcloud-learning-api-base</module>
     </modules>
 
     <dependencies>
