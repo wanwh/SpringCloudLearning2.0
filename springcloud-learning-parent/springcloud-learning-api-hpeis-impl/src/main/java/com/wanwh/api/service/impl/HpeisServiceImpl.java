@@ -24,7 +24,6 @@ public class HpeisServiceImpl implements IHpeisService {
     @Override
     @RequestMapping("/getMember")
     public GlobalResult getMember(@RequestParam("name") String name) {
-        int i = 1/0;
         User user = new User();
         user.setName(service_port);
         user.setAge(20);
