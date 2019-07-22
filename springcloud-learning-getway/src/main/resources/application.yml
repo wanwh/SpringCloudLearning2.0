@@ -16,4 +16,3 @@ spring:
       discovery:
         service-id: config-server
         enable: true
-

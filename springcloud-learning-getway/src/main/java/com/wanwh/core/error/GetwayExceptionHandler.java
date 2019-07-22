@@ -1,4 +1,4 @@
-package com.wanwh.error;
+package com.wanwh.core.error;
 
 import com.alibaba.fastjson.support.spring.FastJsonJsonView;
 import com.wanwh.api.core.HpeisExceptionHandler;

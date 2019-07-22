@@ -1,4 +1,4 @@
-package com.wanwh.fliter;
+package com.wanwh.core.fliter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
