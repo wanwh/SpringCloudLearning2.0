@@ -2,9 +2,15 @@ spring:
   application:
     name: admin-server
   security:
-      user:
-        name: "admin"
-        password: "admin"
+    user:
+      name: "admin"
+      password: "admin"
+  boot:
+    admin:
+      notify:
+        wx:
+          enabled: true
+          wxOpenIds: odMXn1ZQ8UBWS1KH2ChFaO-g4_tY
 server:
   port: 8769
 eureka:
@@ -29,4 +35,4 @@ management:
     health:
       show-details: ALWAYS
     logfile:
-      enabled: true         #可在线查看日志
+      enabled: true         #锟斤拷锟斤拷锟竭查看锟斤拷志
